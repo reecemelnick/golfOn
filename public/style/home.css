@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    height: 100vh;
+
+}
+
+#navBar {
+    grid-column: 0 / 1;
+    grid-row: 0 / 1;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    height: 100vh;
+}
+
+#navBar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

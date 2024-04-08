@@ -1,3 +1,5 @@
+// const { documentId } = require("firebase/firestore");
+
 function ajaxGET(url, callback) {
 
     const xhr = new XMLHttpRequest();
@@ -23,3 +25,8 @@ function ajaxGET(url, callback) {
     xhr.send();
 
 }
+console.log("help");
+
+document.getElementById("join-button").addEventListener("click", (e) => {
+    window.location.href = "home.html";
+})

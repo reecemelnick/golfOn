@@ -19,3 +19,9 @@ let port = 8000;
 app.listen(port, function () {
     console.log("Example app listening on port " + port + "!");
 });
+
+app.get("/home.html", function(req, res) {
+
+    let doc = fs.readFileSync("./app/home.html", "utf8");
+    res.send(doc);
+})
