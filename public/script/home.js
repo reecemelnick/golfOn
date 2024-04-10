@@ -1,3 +1,3 @@
-document.getElementById("proShop").addEventListener("click", (e) => {
-    
+document.getElementById("teeTimes").addEventListener("click", (e) => {
+    window.location.href = "teeTimes.html";
 });

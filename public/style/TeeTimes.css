@@ -1,0 +1,83 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#calender {
+    /* overflow-y: auto; */
+    z-index: 0;
+    width: 80vw;
+    height: 90vh;
+    padding: 10%;
+    padding-top: 0%;
+    background-color: darkgreen;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#calender > div {
+    z-index: 0;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 5%;
+    border: 1%;
+    /* border-color: black; */
+    scale: 90%;
+}
+
+.date {
+    background-color: green;
+}
+
+#blank {
+     background-color: darkgreen;
+}
+
+#names {
+    /* z-index: 4; */
+    font-size: xx-large;
+    scale: 80%;
+    /* padding-top: 5%; */
+    height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#names > div {
+    /* z-index: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    margin-top: 2vh;
+    height: 5vh;
+    display: flex;
+}
+
+#prevMonth {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 10%;
+}
+
+#nextMonth {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 10%;
+}
+
+#month {
+    width: 80%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-size: xx-large;
+}

@@ -24,4 +24,14 @@ app.get("/home.html", function(req, res) {
 
     let doc = fs.readFileSync("./app/home.html", "utf8");
     res.send(doc);
-})
+});
+
+app.get("/teeTimes.html", function(req, res) {
+    let doc = fs.readFileSync("./app/teeTimes.html", "utf8");
+    res.send(doc);
+});
+
+app.get("/Calender.html", function(req, res) {
+    let doc = fs.readFileSync("./app/Calender.html", "utf8");
+    res.send(doc);
+});

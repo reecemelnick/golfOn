@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Page</title>
+        <title>Tee Times</title>
 
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
         <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
-        <link href="./css/home.css" rel="stylesheet">
+        <link href="./css/TeeTimes.css" rel="stylesheet">
     </head>
     <body>
-        <div id="grid">
-
-            <div id="navBar">
-                <div id="teeTimes">Tee Times</div>
-                <div id="proShop">Pro Shop</div>
-                <div id="schedule">Schedule</div>
-            </div>
-
-            <div id="popUps">
-                <div id="popup1"></div>
-                <div id="popup2"></div>
-                <div id="popup3"></div>
-                <div id="popup4"></div>
-                <div id="popup5"></div>
-            </div>
-
+        <div id="header">
+            <button id="prevMonth" onclick="prevMonth()">Prev</button>
+            <div id="month"></div>
+            <button id="nextMonth" onclick="nextMonth()">Next</button>
         </div>
+        <div id="names">
+            <div>Saturday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Sunday</div>
+        </div>
+        <div id="calender"></div>
 
         <script src="./js/firebase_AUTH.js"></script>
-        <script src="./js/home.js"></script>
+        <script src="./js/TeeTimes.js"></script>
     </body>
 </html>
